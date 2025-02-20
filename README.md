@@ -13,8 +13,12 @@ This project demonstrates a simple object tracking system that uses YOLOv8 Nano 
 - **Real-Time Visualization:**  
   The video displays the tracked object with its corresponding ID.
 
-**Clone the Repository:**
-
-   ```bash
+1. **Clone the Repository:**
+   ```sh
    git clone https://github.com/MohanadElMetwally/Object_Tracking_With_User_Input.git
-   cd Object_Tracking_With_User_Input
+   ```
+   
+2. **Install the required dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
