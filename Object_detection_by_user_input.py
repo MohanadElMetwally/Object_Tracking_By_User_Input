@@ -46,13 +46,6 @@ for result in results:
     # Extract ids tensor from result
     track_ids = result.boxes.id.numpy() if result.boxes is not None and result.boxes.id is not None else None
 
-    # If no boxes are detected, show the frame and continue.
-    if boxes.size == 0 or track_ids is None:
-        cv2.imshow("Tracking", frame)
-        if cv2.waitKey(30) & 0xFF == ord("q"):
-            break
-        continue
-
     # On the first frame where we have detections, match the user-selected box.
     if target_track_id is None:
         user_box_tensor = torch.tensor([list(user_box)])
